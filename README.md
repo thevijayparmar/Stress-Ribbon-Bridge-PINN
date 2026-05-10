@@ -57,6 +57,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install pandas numpy scikit-learn onnxruntime streamlit plotly
 ```
 
+
 ### Step 2: Data Generation (The Math) 🧮
 
 Before training the AI, we need to teach it the laws of physics. The generator scripts sweep through millions of combinations of Spans, Height Differences, Distributed Loads, and Target Sags. It mathematically filters out physically impossible geometries and saves the viable ones to CSV datasets.
@@ -88,6 +89,8 @@ python "AI_Training/LongSpan__AITraining.py"
 ```
 
 **Output:** The training will run for up to 500 epochs. The script will automatically isolate the "Best Epoch" (where physical fidelity peaks) and export the final weights as highly optimized `.onnx` files, alongside a `.json` Translation Dictionary for downstream use.
+<img width="1892" height="908" alt="Generator_Validation_0 46M_V7_AIProcess" src="https://github.com/user-attachments/assets/a0244900-c621-4005-a21b-a82ab8341083" />
+
 
 ### Step 4: Interactive Visualizer (The Application) 🪄
 
@@ -103,6 +106,11 @@ Inside the Visualizer you can:
 - Compare **Exact Math vs. Surrogate AI vs. PINN AI** side-by-side across 18 distinct structural parameters.
 - View a live, dynamically updated plot of your cable catenary profile.
 - Read automated **Explainable AI (XAI)** insights that warn you about capacity limits, span sensitivities, and geometric shifts.
+
+- <img width="3783" height="1996" alt="Screenshot 2026-05-08 133134" src="https://github.com/user-attachments/assets/fd9da6b1-e456-4eb5-a54a-54aea3030f87" />
+<img width="3687" height="1427" alt="Screenshot 2026-05-08 133155" src="https://github.com/user-attachments/assets/0a5302d2-e6ff-4055-b797-ebcb6008eb41" />
+
+
 
 ---
 
